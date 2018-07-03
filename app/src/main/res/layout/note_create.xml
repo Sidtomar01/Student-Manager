@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bgg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/noteTitle"
+        android:hint="Select Subject"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:padding="15dp"
+        android:layout_below="@id/noteTitle"
+        android:gravity="top|left"
+        android:hint="Body here"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/noteBody"
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/colorPrimary"/>
+
+    <info.hoang8f.widget.FButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/noteSaveButton"
+        app:shadowColor="@android:color/black"
+        app:shadowEnabled="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+<LinearLayout
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_alignBottom="@+id/noteBody"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <Spinner
+        android:layout_weight=".5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/pinSpinner" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/subjectNote"
+        android:hint="Subject Name"
+
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/colorPrimary"/>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgg"
+    android:weightSum="10"
+    android:layout_height="match_parent">
+    <Spinner
+        android:layout_weight=".5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/daySelector"
+        android:layout_gravity="center_horizontal" />
+    <Spinner
+        android:layout_weight=".5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/daySelector"
+        android:id="@+id/classSelector"
+        android:layout_gravity="center_horizontal" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/idclassSelector"
+        android:hint="Select Subject"
+        android:textColorHint="@color/colorPrimary"
+
+        android:textColor="@color/colorPrimary"
+        android:textSize="13sp"
+
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+
+        app:met_primaryColor="@color/colorPrimary"
+
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <TimePicker
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/timePicker"
+        android:layout_below="@id/subjectName" />
+    <info.hoang8f.widget.FButton
+        android:layout_weight="1"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:text="SAVE CHANGES"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:textSize="16dp"
+        android:id="@+id/saveBUTTON_SCHEDULE"
+        android:layout_gravity="center_horizontal"
+        app:shadowColor="@android:color/black"
+        app:shadowEnabled="true"
+        />
+
+</LinearLayout>
